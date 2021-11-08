@@ -9,6 +9,6 @@ def calc_product(lines: [str]) -> int:
 
 
 if __name__ == '__main__':
-    file = open('day1input.txt', 'r')
-    product = calc_product(file.readlines())
-    print(product)
+    with open('day1input.txt', 'r') as file:
+        product = calc_product(file.readlines())
+        print(product)
