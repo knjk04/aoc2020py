@@ -1,3 +1,6 @@
+# Alternative approach: use file.read().splitlines(), then sort the list. Next, iterate over each
+# element in the list and do a binary search to see whether the number needed to sum to 2020 is in
+# the list
 def calc_product(lines: [str]) -> int:
     for index, line in enumerate(lines):
         entry = int(line.strip())
